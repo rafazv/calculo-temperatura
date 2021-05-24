@@ -7,24 +7,28 @@ public class ConversorTempTeste {
     @Test
     public void testeFahrenheitCelsius(){
         ConversorTemp conversor = new ConversorTemp();
-        float respMetodo;
+        double respMetodo, temp;
 
-        respMetodo = conversor.fahrenheitCelsius(32);
-        assertEquals(0.0, respMetodo);
+        temp = 32;
+        respMetodo = conversor.fahrenheitCelsius(temp);
+        assertEquals(0.0, respMetodo, 0.0002);
 
-        respMetodo = conversor.fahrenheitCelsius(84);
-        assertEquals(28.88889, respMetodo);
+        temp = 84;
+        respMetodo = conversor.fahrenheitCelsius(temp);
+        assertEquals(28.88889, respMetodo, 0.0002);
     }
 
     @Test
     public void testeCelsiusFahrenheit(){
         ConversorTemp conversor = new ConversorTemp();
-        float respMetodo;
+        double respMetodo, temp;
 
-        respMetodo = conversor.celsiusFahrenheit(0);
-        assertEquals(32.0, respMetodo);
+        temp = 0;
+        respMetodo = conversor.celsiusFahrenheit(temp);
+        assertEquals(32.0, respMetodo, 0.0002);
 
-        respMetodo = conversor.celsiusFahrenheit(35,9);
-        assertEquals(96.62, respMetodo);
+        temp = 35.9;
+        respMetodo = conversor.celsiusFahrenheit(temp);
+        assertEquals(96.62, respMetodo, 0.0002);
     }
 }
