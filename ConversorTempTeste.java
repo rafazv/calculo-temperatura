@@ -40,6 +40,6 @@ public class ConversorTempTeste {
         System.out.println("Celsius temperature: " + temp);
         respMetodo = conversor.celsiusFahrenheit(temp);
         System.out.println("Fahrenheint temperature: " + respMetodo);
-        assertEquals(97.62, respMetodo, 0.0002);
+        assertEquals(96.62, respMetodo, 0.0002);
     }
 }
